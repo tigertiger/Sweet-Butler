@@ -1,7 +1,11 @@
-function App() {
+import React from "react";
+import Nav from "./Nav";
+
+function App(){
   return (
-    <div className="App">
-    </div>
+    <React.Fragment>
+      <Nav />
+    </React.Fragment>
   );
 }
 

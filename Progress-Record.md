@@ -5,3 +5,4 @@
 * Read about Trello tech stack
   * <em>TD: Check out Vue.js?</em>
 * Create Trello board & populate with to do's
+* Start basic static react app creation so I have something to think about
