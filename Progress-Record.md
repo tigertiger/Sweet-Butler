@@ -11,3 +11,8 @@
   * https://www.geeksforgeeks.org/create-a-responsive-navbar-using-reactjs/
   * https://www.skillshare.com/classes/The-Complete-React-Bootcamp-2021-w-React-Hooks-Firebase/895676015
     * Completed lessons 35 through 55 of the class above; solidified some react knowledge; learned about hooks a bit; got some solid ideas about file setup, conditional rendering, styling [dynamic classes, etc.]
+
+<h3 style="padding:1em 0 1em 0">December 8th</h3>
+
+* Explore MUI components [12:10pm-12:40pm]
+* Began creating App Diagram [12:40pm to 12:55pm]
