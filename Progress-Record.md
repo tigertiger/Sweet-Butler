@@ -19,5 +19,7 @@
 
 <h3 style="padding:1em 0 1em 0">December 9th</h3>
 
-* Lessons 58 through ## of https://www.skillshare.com/classes/The-Complete-React-Bootcamp-2021-w-React-Hooks-Firebase/895676015 [1:05pm - ]
+* Watched/followed along with lessons 58 through 60 of https://www.skillshare.com/classes/The-Complete-React-Bootcamp-2021-w-React-Hooks-Firebase/895676015 [1:05pm - 2pm]
   * Hoping to gain a stronger understanding of multi-layout react sites & search functionality
+* Spent some time troubleshooting VS Code shortcuts and extensions >[ [2pm - 2:21pm]
+* Headache break. Sigh.
