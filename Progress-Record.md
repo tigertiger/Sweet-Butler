@@ -16,3 +16,8 @@
 
 * Explore MUI components [12:10pm-12:40pm]
 * Began creating App Diagram [12:40pm to 12:55pm]
+
+<h3 style="padding:1em 0 1em 0">December 9th</h3>
+
+* Lessons 58 through ## of https://www.skillshare.com/classes/The-Complete-React-Bootcamp-2021-w-React-Hooks-Firebase/895676015 [1:05pm - ]
+  * Hoping to gain a stronger understanding of multi-layout react sites & search functionality
