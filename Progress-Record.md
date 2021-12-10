@@ -26,3 +26,10 @@
 * Back to the bootcamp: lessons 61 through 64 [2:33pm - 4:05pm]
   * Learned a cool, scalable way to do a nav bar with an array
   * Learned how to structure search queries and display results [also work with APIs in that context, though I don't think I'll need that for this project]
+
+<em>End of day thoughts: Would like to finish following along with the box office tutorial section [through lesson 82], but also would like to actually get something bigger than what I have "down on paper," so...goals for tomorrow...are?
+- Create very basic app with input and queries and display?
+- Play around and see if Firebase will adequately work for this project or if I need a different database/hosting option
+- Watch as much of that tutorial as I have time for after I feel like my project exists in some way...?
+
+Something like that...</em>
