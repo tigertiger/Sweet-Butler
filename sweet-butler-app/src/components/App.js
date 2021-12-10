@@ -1,11 +1,25 @@
 import React from "react";
-import Nav from "./Nav";
+import { Switch, Route } from 'react-router-dom';
+import { Home } from "./../pages/Home";
+import { Settings } from "./../pages/Settings";
 
-function App(){
+function App() {
   return (
-    <React.Fragment>
-      <Nav />
-    </React.Fragment>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/settings">
+        <Settings />
+      </Route>
+
+      <Route>
+        <div>
+          <h1>404.</h1>
+          <h3>Go Somewhere Else. 😠</h3>
+        </div>
+      </Route>
+    </Switch>
   );
 }
 

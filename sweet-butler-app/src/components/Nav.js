@@ -1,14 +1,23 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-function Nav(){
+const LINKS = [
+  { to: '/', text: 'Home'},
+  { to: '/settings', text: 'Settings'},
+]
+
+const Nav = () => {
   return (
-    <React.Fragment>
-      <div className="container">
-        Buttons Go Here??
-        Testing...
-      </div>
-    </React.Fragment>
-  );
+    <div>
+      <ul>
+        {
+          LINKS.map(item => (
+            <li key={item.to}><Link to={item.to}>{item.text}</Link>
+            </li>
+          ))}
+      </ul>
+    </div>
+  )
 }
 
 export default Nav;

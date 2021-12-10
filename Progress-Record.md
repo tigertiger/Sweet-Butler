@@ -35,3 +35,7 @@
 Something like that...</em>
 
 * 4:23 - 4:30pm - Oh, also updated KanBan board. Realized I need to figure out if Firebase is an ok solution for authentication, since I'm planning to use Browser Router and in this week's projects trying to use firebase auth with browser router was a huge nightmare....
+
+<h3 style="padding:1em 0 1em 0">December 10th</h3>
+
+[8:00am - ] : Started building out basic app
