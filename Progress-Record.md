@@ -38,4 +38,6 @@ Something like that...</em>
 
 <h3 style="padding:1em 0 1em 0">December 10th</h3>
 
-[8:00am - ] : Started building out basic app
+[8:00am - 8:46am] : Started building out basic app
+[] : Created Flow document to start describing basic user experience
+[8:49am - ] : Continue basic app build

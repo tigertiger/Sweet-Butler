@@ -1,5 +1,20 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const NavDiv = styled.div
+`
+float:right;
+padding: 2% 5% 0 0;
+`
+
+const NavLi = styled.li
+`
+list-style-type:none;
+font-weight: bold;
+font-size: 1.5em;
+`
+// These styled components seem like a terrible way to do things...
 
 const LINKS = [
   { to: '/', text: 'Home'},
@@ -8,15 +23,15 @@ const LINKS = [
 
 const Nav = () => {
   return (
-    <div>
+    <NavDiv>
       <ul>
         {
           LINKS.map(item => (
-            <li key={item.to}><Link to={item.to}>{item.text}</Link>
-            </li>
+            <NavLi key={item.to}><Link to={item.to}>{item.text}</Link>
+            </NavLi>
           ))}
       </ul>
-    </div>
+    </NavDiv>
   )
 }
 
