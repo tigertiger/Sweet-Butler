@@ -44,4 +44,5 @@ Something like that...</em>
 [10:12am - 12:15pm]: Return to the React Bootcamp lessons. 66 through 72
   * This should all be super useful, unless I run into a lot of trouble translating from using an API into using Firestore... 🤞
 [1:25pm - 1:45pm]: Did some reading and playing around with styled components, because my tutorial guy was using them. Figured out how to use extended classes & etc. Seems much more useful than I originally thought. Still not entirely convinced. What's really the difference between a styled.js and a styles.css? Blah blah.
-[1:55pm - ]: MORE TUTORIAL. WOOooOooOoOoO. 🥴
+[1:55pm - 2:25pm]: MORE TUTORIAL. WOOooOooOoOoO. 🥴 Lesson 73. Can't do any more. Using local storage is up next, anyway, and I don't want that...going to go back to trying to integrate Firebase with my app. Hopefully not a waste of time. :D
+
