@@ -23,7 +23,7 @@
   * Hoping to gain a stronger understanding of multi-layout react sites & search functionality
 * Spent some time troubleshooting VS Code shortcuts and extensions >[ [2pm - 2:21pm]
 * Headache break. Sigh.
-* Back to the bootcamp: lessons 61 through 64 [2:33pm - 4:05pm]
+* Back to the bootcamp: lessons 61 through 65 [2:33pm - 4:05pm]
   * Learned a cool, scalable way to do a nav bar with an array
   * Learned how to structure search queries and display results [also work with APIs in that context, though I don't think I'll need that for this project]
 
@@ -38,6 +38,8 @@ Something like that...</em>
 
 <h3 style="padding:1em 0 1em 0">December 10th</h3>
 
-[8:00am - 8:46am] : Started building out basic app
+[8:00am - 8:46am]: Started building out basic app
 [] : Created Flow document to start describing basic user experience
-[8:49am - ] : Continue basic app build
+[8:49am - 10:12am]: Continue basic app build
+[10:12am - 12:15pm]: Return to the React Bootcamp lessons. 66 through 72
+  * This should all be super useful, unless I run into a lot of trouble translating from using an API into using Firestore... 🤞
