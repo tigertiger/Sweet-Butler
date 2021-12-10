@@ -23,3 +23,6 @@
   * Hoping to gain a stronger understanding of multi-layout react sites & search functionality
 * Spent some time troubleshooting VS Code shortcuts and extensions >[ [2pm - 2:21pm]
 * Headache break. Sigh.
+* Back to the bootcamp: lessons 61 through 64 [2:33pm - 4:05pm]
+  * Learned a cool, scalable way to do a nav bar with an array
+  * Learned how to structure search queries and display results [also work with APIs in that context, though I don't think I'll need that for this project]
