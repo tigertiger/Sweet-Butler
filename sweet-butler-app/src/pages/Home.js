@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <MainPageLayout>
       <Title subtitle="How are you feeling today?" />
-      Home.
+      Home.<br />
       <Input />
     </MainPageLayout>
   )
