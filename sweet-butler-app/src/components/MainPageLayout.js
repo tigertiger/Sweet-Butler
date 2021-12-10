@@ -6,7 +6,7 @@ export const MainPageLayout = ({ children }) => {
   return (
     <div>
       <Nav />
-
+      <Title title="Sweet Butler" />
       {children}
     </div>
   )
