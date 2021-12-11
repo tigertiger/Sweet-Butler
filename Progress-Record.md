@@ -50,9 +50,11 @@ Something like that...</em>
 
 [1:55pm - 2:25pm]: MORE TUTORIAL. WOOooOooOoOoO. 🥴 Lesson 73. Can't do any more. Using local storage is up next, anyway, and I don't want that...going to go back to trying to integrate Firebase with my app. Hopefully not a waste of time. :D  
 
-[1:30 - ]: <span style="text-decoration:line-through;">Continue basic app build</span>. Got overwhelmed and started a new, different tutorial around 1:45. It is promising so far.  
+[1:30 - 5:15pm]: <span style="text-decoration:line-through;">Continue basic app build</span>. Got overwhelmed and started a new, different tutorial around 1:45. It is promising so far.  
 https://youtu.be/VqgTr-nd7Cg
 
-x
+<br />
+<em>End of Day Thoughts:</em>  
 
-[]
+The setup I have now, after getting most of the way through the to do tutorial feels like actual progress, ha ha. Will finish the last 30 or so minutes of that and then should be able to start exploring data-structures, filtering, and queries, which I think will be the bulk of the non-ui work.
+<hr>
