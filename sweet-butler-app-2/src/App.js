@@ -3,6 +3,7 @@ import './App.css';
 import {Button, FormControl, InputLabel, Input} from '@material-ui/core';
 import Todo from './components/Todo';
 import db from './firebase';
+import firebase from 'firebase';
 
 function App() {
 
@@ -17,7 +18,12 @@ function App() {
 
   const addTodo = (event) => {
     event.preventDefault();
-    console.log("😠");
+
+    db.collection('todos').add({
+      todo: input,
+      timetamp: firebase.firestore.FieldValue.serverTimestamp(),
+    })
+
     setTodos([...todos, input]);
     setInput('');
   }
@@ -30,7 +36,7 @@ function App() {
         {/* Added form to enable Enter as submit. A much easier way than creating the keylogger...buuuuut...not as cool. :D */}
         <InputLabel>🎩 How Can I Help?</InputLabel>
         <Input value={input} onChange={event => setInput(event.target.value)} /><br />
-      </FormControl>
+      </FormControl><br />
         <Button disabled={!input} variant="outlined" color="#000" type="submit" onClick={addTodo}>Add To Do</Button>
       </form>
 
