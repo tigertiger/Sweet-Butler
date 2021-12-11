@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import {Button, FormControl, InputLabel, Input} from '@material-ui/core';
 
 function App() {
 
@@ -9,17 +10,19 @@ function App() {
   const addTodo = (event) => {
     event.preventDefault();
     console.log("😠");
-    setTodos([...todos, input])
+    setTodos([...todos, input]);
+    setInput('');
   }
 
   return (
     <div className="App">
       <h1>Ugh. 😠</h1>
-      <form>
+      <FormControl>
         {/* Added form to enable Enter as submit. A much easier way than creating the keylogger...buuuuut...not as cool. :D */}
-        <input value={input} onChange={event => setInput(event.target.value)} /><br />
-        <button type="submit" onClick={addTodo}>Add To Do</button>
-      </form>
+        <InputLabel>🎩 How Can I Help?</InputLabel>
+        <Input value={input} onChange={event => setInput(event.target.value)} /><br />
+        <Button disabled={!input} variant="outlined" color="#000" type="submit" onClick={addTodo}>Add To Do</Button>
+      </FormControl>
       <ul>
         {todos.map(todo => (
           <li>{todo}</li>
