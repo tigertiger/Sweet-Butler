@@ -66,4 +66,13 @@ Going to start the day by finishing that YouTube to do tutorial/walkthrough
 Then it's time to start exploring/figuring out data structures, queries, etc.
 
 [8:00 - 10:00am]: I have spent the past 2 hours trying to troubleshoot why the app is no longer bringing in content from the firestore database [it's still adding properly]. I have not figured it out yet. I may die of this.
-[10:34am]: Fixed. How? Not sure. Don't care rn. It's working. My life can continue.
+
+[10:34am]: Fixed. How? Not sure. Don't care rn. It's working. My life can continue. Taking a break.
+
+-- Oh, I also deployed via firebase before I realized everything was broken. So it's live now. Had friends test it.
+
+[10:45 - 11:40am]: Finished tutorial. 🤓
+
+[11:40 - 12:30pm]: Try to figure out how to disable github action deploy...not sure if I did it or not. Not super important right now, I guess.
+
+[1:30pm -]: 

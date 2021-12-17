@@ -48,7 +48,7 @@ function Todo(props) {
       onClose={e => setOpen(false)}
       >
         <div className={classes.paper}>
-          <h1>I am a modal</h1>
+          <h1>Edit Action</h1>
           <FormControl>
             <Input value ={input} onChange={event => setInput(event.target.value)} />
           </FormControl>
@@ -57,15 +57,16 @@ function Todo(props) {
       </Modal>
 
     <List>
-      <ListItem>
+      <ListItem
+      style={{width:400}}>
         {/* <ListItemAvatar>
           <Avatar>
           </Avatar>
         </ListItemAvatar> */}
         <ListItemText primary={props.todo.todo} secondary="⏱️ Dummy Deadline" />
-      </ListItem>
-      <button onClick={e => setOpen(true)}>Edit</button>
+      <Button onClick={e => setOpen(true)}>Edit</Button>
       <DeleteForeverIcon onClick={event => db.collection('todos').doc(props.todo.id).delete()} />
+      </ListItem>
     </List>
     </>
   )
