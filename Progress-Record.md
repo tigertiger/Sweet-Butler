@@ -58,3 +58,11 @@ https://youtu.be/VqgTr-nd7Cg
 
 The setup I have now, after getting most of the way through the to do tutorial feels like actual progress, ha ha. Will finish the last 30 or so minutes of that and then should be able to start exploring data-structures, filtering, and queries, which I think will be the bulk of the non-ui work.
 <hr>
+
+<h3 style="padding:1em 0 1em 0">December 17th</h3>
+
+Planning thoughts:
+Going to start the day by finishing that YouTube to do tutorial/walkthrough
+Then it's time to start exploring/figuring out data structures, queries, etc.
+
+[8:00 - 10:00am]: I have spent the past 2 hours trying to troubleshoot why the app is no longer bringing in content from the firestore database [it's still adding properly]. I have not figured it out yet. I may die of this.
