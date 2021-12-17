@@ -37,7 +37,7 @@ function App() {
         <InputLabel>🎩 How Can I Help?</InputLabel>
         <Input value={input} onChange={event => setInput(event.target.value)} /><br />
       </FormControl><br />
-        <Button disabled={!input} variant="outlined" color="#000" type="submit" onClick={addTodo}>Add To Do</Button>
+        <Button disabled={!input} variant="outlined" color="default" type="submit" onClick={addTodo}>Add To Do</Button>
       </form>
 
       <ul>
