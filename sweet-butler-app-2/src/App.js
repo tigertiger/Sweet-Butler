@@ -11,7 +11,7 @@ function App() {
   const [input, setInput] = useState('');
 
   useEffect(() => {
-    db.collection('todos').onSnapshot(snapshot => {
+    db.collection('todos').orderBy("timestamp", "desc").onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => ({id: doc.id, todo: doc.data().todo})))
     })
   }, []);
@@ -21,7 +21,7 @@ function App() {
 
     db.collection('todos').add({
       todo: input,
-      timetamp: firebase.firestore.FieldValue.serverTimestamp()
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
 
     setTodos([...todos, input]);
