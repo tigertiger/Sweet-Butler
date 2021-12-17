@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import {List, ListItem, ListItemText, Button, Modal} from '@material-ui/core';
+import {List, ListItem, ListItemText, Button, Modal, FormControl, Input, InputLabel} from '@material-ui/core';
 import db from './../firebase';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { makeStyles } from '@material-ui/core/styles';
@@ -20,6 +20,8 @@ function Todo(props) {
 
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+  const [input, setInput] = useState(props.todo.todo);
+  // could use this instead placeholder={props.todo.todo} 
 
   // const handleOpen = () => {
   //   setOpen(true);
@@ -28,6 +30,15 @@ function Todo(props) {
   // const handleClose = () => {
   //   setOpen(false);
   // };
+
+  const updateTodo = () => {
+
+    db.collection('todos').doc(props.todo.id).set({
+      todo: input
+    }, {merge: true});
+
+    setOpen(false);
+  }
 
   return (
     <>
@@ -38,7 +49,10 @@ function Todo(props) {
       >
         <div className={classes.paper}>
           <h1>I am a modal</h1>
-          <button onClick={e => setOpen(false)}>Close</button>
+          <FormControl>
+            <Input value ={input} onChange={event => setInput(event.target.value)} />
+          </FormControl>
+          <Button onClick={updateTodo}>Update To Do</Button>
         </div>
       </Modal>
 
