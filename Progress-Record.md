@@ -66,3 +66,4 @@ Going to start the day by finishing that YouTube to do tutorial/walkthrough
 Then it's time to start exploring/figuring out data structures, queries, etc.
 
 [8:00 - 10:00am]: I have spent the past 2 hours trying to troubleshoot why the app is no longer bringing in content from the firestore database [it's still adding properly]. I have not figured it out yet. I may die of this.
+[10:34am]: Fixed. How? Not sure. Don't care rn. It's working. My life can continue.
