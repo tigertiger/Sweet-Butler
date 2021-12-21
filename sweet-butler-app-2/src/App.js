@@ -7,6 +7,7 @@ import firebase from 'firebase';
 import ButlerControl from './components/ButlerControl';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Form from './components/Form';
+import Nav from './components/Nav';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
 
           </Routes>
         <ButlerControl />
+        <Nav />
       </div>
     </Router>
   );
