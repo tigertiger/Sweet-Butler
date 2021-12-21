@@ -5,9 +5,10 @@ import Todo from './components/Todo';
 import db from './firebase';
 import firebase from 'firebase';
 import ButlerControl from './components/ButlerControl';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Form from './components/Form';
 import Nav from './components/Nav';
+import Welcome from './pages/Welcome';
 
 function App() {
 
@@ -21,28 +22,27 @@ function App() {
   return (
     <Router>
       <div className="App">
-          <Routes>
-            <Route 
-            path='/login' 
-            element={
-            <Form title="Login"
-            setEmail={setEmail}
-            setPassword={setPassword}
-            handleAction={() => handleAction(1)} />} 
-            />
+        <Switch>
+          <Route
+            exact path='/login'>
+              <Form title="Login"
+                setEmail={setEmail}
+                setPassword={setPassword}
+                handleAction={() => handleAction(1)} /></Route>
 
-            <Route 
-            path='/register' 
-            element={
-            <Form 
-            title="Register"
-            setEmail={setEmail}
-            setPassword={setPassword}
-            handleAction={() => handleAction(2)} />} 
-            />
+          <Route
+            exact path='/register'>
+              <Form title="Register"
+                setEmail={setEmail}
+                setPassword={setPassword}
+                handleAction={() => handleAction(2)} /></Route>
 
-          </Routes>
-        <ButlerControl />
+          <Route exact path='/' element={<Welcome />} />
+          <Route><>404. Go Somewhere Else. 😠</></Route>
+
+
+        </Switch>
+        {/* <ButlerControl /> */}
         <Nav />
       </div>
     </Router>

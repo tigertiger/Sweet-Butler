@@ -83,7 +83,8 @@ Then it's time to start exploring/figuring out data structures, queries, etc.
 
 [11:34 - 12:15pm]: Moved some stuff around [App content to ButlerControl, etc.]  
 
-[1:15 - ]: Going to attempt to add react-router without upgrading anything...
+[1:15 - 2:09pm]: Going to attempt to add react-router without upgrading anything...Did this for a static form. Waiting to connect to Firestore for a while while I work on other stuff. Also started adding navigation. Ended up downgrading to react-router & react-router-dom 5.2.
+<span style="background-color:hotpink;">My old version was "react-router-dom": "^6.2.1". Noting in case I need to change back.</span> But so far, with a few tweaks, it's all working fine, and this means I can use the easy 404 trick and some other things I learned in tutorials.
 
 <hr>
 <h3 style="padding:1em 0 1em 0">Things to Come Back To</h3>
