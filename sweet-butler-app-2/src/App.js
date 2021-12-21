@@ -25,19 +25,22 @@ function App() {
         <Switch>
           <Route
             exact path='/login'>
-              <Form title="Login"
-                setEmail={setEmail}
-                setPassword={setPassword}
-                handleAction={() => handleAction(1)} /></Route>
+            <Form title="Login"
+              setEmail={setEmail}
+              setPassword={setPassword}
+              handleAction={() => handleAction(1)} /></Route>
 
           <Route
             exact path='/register'>
-              <Form title="Register"
-                setEmail={setEmail}
-                setPassword={setPassword}
-                handleAction={() => handleAction(2)} /></Route>
+            <Form title="Register"
+              setEmail={setEmail}
+              setPassword={setPassword}
+              handleAction={() => handleAction(2)} /></Route>
 
-          <Route exact path='/' element={<Welcome />} />
+          <Route exact path='/'>
+            <Welcome />
+          </Route>
+
           <Route><>404. Go Somewhere Else. 😠</></Route>
 
 
