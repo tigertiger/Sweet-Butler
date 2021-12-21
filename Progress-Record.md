@@ -75,4 +75,13 @@ Then it's time to start exploring/figuring out data structures, queries, etc.
 
 [11:40 - 12:30pm]: Try to figure out how to disable github action deploy...not sure if I did it or not. Not super important right now, I guess.
 
-[1:30pm -]: 
+[1:30 - 2:43pm]: Did some stuff idr [see git commits] & then tried to figure out how to use Firestore ids as unique object keys. Giving up on that for now.
+
+<hr>
+<h3 style="padding:1em 0 1em 0">December 21st</h3>
+[9:00 - 11:34am]: Styling to make myself feel better; then tried to add react-router and ended up upgrading firebase and everything broke and it's terrible. I also seem not to have actually committed or pushed or something at the end of the day last time I worked on this, and my branching didn't work, so I rolled back a bunch of changes via vs code and I'm basically back where I started with a few new components that I will try to make work without upgrading firebase...
+
+
+<hr>
+<h3 style="padding:1em 0 1em 0">Things to Come Back To</h3>
+* Use firestore ids as object keys
