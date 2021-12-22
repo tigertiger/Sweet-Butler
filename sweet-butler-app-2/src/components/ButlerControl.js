@@ -50,6 +50,12 @@ function ButlerControl() {
 
   const isHome = location === 'home';
 
+  const onStressChange = (event) => {
+    setStress(event.target.value)
+  }
+
+  const isStress = stress === 'stress';
+
   return (
     <div className="ButlerControl">
       <h1>Ugh. 😠</h1>
@@ -58,7 +64,11 @@ function ButlerControl() {
           {/* Added form to enable Enter as submit. A much easier way than creating the keylogger...buuuuut...not as cool. :D */}
           <InputLabel>🎩 How Can I Help?</InputLabel>
           <Input value={object} onChange={event => setObject(event.target.value)} /><br />
-          <FormControlLabel control={<Checkbox value={stress} onChange={(e) => setStress(e.target.value)} />} label="Is this Stressful?" /><br />
+
+          <div>Is this Stressful?</div>
+          <FormControlLabel control={<Checkbox value={'stress'} onChange={onStressChange} checked={isStress} />} label="Yes" />
+          <FormControlLabel control={<Checkbox value={'noStress'} onChange={onStressChange} checked={!isStress} />} label="Nope" /><br />
+
           <div>How Much Time Does This Take?</div>
           <Input label="How Much Time Does This Take?" type="number" value={time} onChange={event => setTime(event.target.value)} /><br />
           <div>How Much Energy Does This Take?</div>
@@ -66,7 +76,7 @@ function ButlerControl() {
           <div>Where does this happen?</div>
           {/* <FormControlLabel control={<Checkbox value={home} onChange={(e) => setHome(0)} />} label="Home" /><br />
           <FormControlLabel control={<Checkbox value={home} onChange={(e) => setHome(1)} />} label="Out" /><br /> */}
-          <FormControlLabel control={<Checkbox value={'home'} onChange={onLocChange} checked={isHome} />} label="Home" /><br />
+          <FormControlLabel control={<Checkbox value={'home'} onChange={onLocChange} checked={isHome} />} label="Home" />
           <FormControlLabel control={<Checkbox value={'out'} onChange={onLocChange} checked={!isHome} />} label="Out" /><br />
         </FormControl><br />
         <Button disabled={!object} variant="outlined" color="default" type="submit" onClick={addTodo}>Add To Do</Button>
