@@ -8,9 +8,6 @@ function Welcome() {
     <div>
       <Greeting text2="How Are You Feeling?" />
     </div>
-    <div>
-      <Questions />
-    </div>
     </>
   )
 }
