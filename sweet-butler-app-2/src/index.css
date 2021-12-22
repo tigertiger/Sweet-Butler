@@ -6,6 +6,7 @@ body {
 
   background-color: #d9e4f5;
   background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  background-attachment: fixed;
 
   color:rgb(70, 60, 104);
 
@@ -24,4 +25,14 @@ h1 {
 .fade-out {
   opacity: 0;
   transition: opacity 1s ease;
+}
+
+#greebing1 {
+  font-size:100pt;
+}
+
+#greebing2 {
+  font-size: 30pt;
+  line-height: 0;
+  padding-bottom:4%;
 }

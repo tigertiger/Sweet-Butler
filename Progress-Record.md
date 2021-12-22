@@ -96,6 +96,11 @@ For tomorrow...I need to do everything. But, I guess, priorities?
 5. Everything else.
 6. 🤢 & 🪦  
 
+<hr>
+<h3 style="padding:1em 0 1em 0">December 22nd</h3>
+
+[Morning]: See Git commits
+
 
 <hr>
 <h3 style="padding:1em 0 1em 0">Things to Come Back To</h3>
