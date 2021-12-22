@@ -5,10 +5,7 @@ function Welcome() {
   return (
     <>
     <div>
-      <Greeting />
-    </div>
-    <div>
-      <Greeting text="How Are You Feeling?" />
+      <Greeting text2="How Are You Feeling?" />
     </div>
     <div>
       <h3>Questions Block Will Go Here</h3>
