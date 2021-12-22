@@ -1,5 +1,6 @@
 import React from 'react';
 import Greeting from './../components/Greeting';
+import Questions from '../components/Questions';
 
 function Welcome() {
   return (
@@ -8,7 +9,7 @@ function Welcome() {
       <Greeting text2="How Are You Feeling?" />
     </div>
     <div>
-      <h3>Questions Block Will Go Here</h3>
+      <Questions />
     </div>
     </>
   )

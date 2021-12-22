@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Form from './components/Form';
 import Nav from './components/Nav';
 import Welcome from './pages/Welcome';
+import Cupboard from './pages/Cupboard';
 
 function App() {
 
@@ -23,21 +24,28 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Nav />
+        <Nav />
         <Switch>
+          <Route
+            exact path='/cupboard'>
+            <Cupboard />
+          </Route>
+
           <Route
             exact path='/login'>
             <Form title="Login"
               setEmail={setEmail}
               setPassword={setPassword}
-              handleAction={() => handleAction(1)} /></Route>
+              handleAction={() => handleAction(1)} />
+          </Route>
 
           <Route
             exact path='/register'>
             <Form title="Register"
               setEmail={setEmail}
               setPassword={setPassword}
-              handleAction={() => handleAction(2)} /></Route>
+              handleAction={() => handleAction(2)} />
+          </Route>
 
           <Route exact path='/'>
             <Welcome />
