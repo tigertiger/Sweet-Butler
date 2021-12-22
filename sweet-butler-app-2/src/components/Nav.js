@@ -29,18 +29,20 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import LoginIcon from '@mui/icons-material/Login';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
+import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles, withStyles } from '@material-ui/styles';
+import Grid from "@material-ui/core/Grid";
 
 export default function TemporaryDrawer() {
 
   const useStyles = makeStyles({
     paper: {
-      background: "#fb0e90"
-}
+      background: "#d9e4f541",
+    },
   });
 
   const classes = useStyles();
-  
+
 
   const [state, setState] = React.useState({
     right: false,
@@ -56,7 +58,8 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      className={classes.paper}
+      sx={{ width: 250, height: 700 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -89,9 +92,10 @@ export default function TemporaryDrawer() {
     <div>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Grid container justifyContent="flex-end">
+          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /></Button>
+          </Grid>
           <Drawer
-            className={classes.paper}
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './index.css';
 import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
 import Todo from './components/Todo';
 import db from './firebase';
@@ -22,6 +23,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <Nav />
         <Switch>
           <Route
             exact path='/login'>
@@ -46,7 +48,6 @@ function App() {
 
         </Switch>
         {/* <ButlerControl /> */}
-        <Nav />
       </div>
     </Router>
   );
