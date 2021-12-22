@@ -18,13 +18,15 @@
 // export default Questions
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { List, ListItem, ListItemText, Button, Modal, FormControl, Input, InputLabel, FormGroup, FormControlLabel, Checkbox, Slider, Box } from '@material-ui/core';
 import db from './../firebase';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { makeStyles } from '@material-ui/core/styles';
 import TimeSlider from './TimeSlider';
 import EnergySlider from './EnergySlider';
+import Todo from './../components/Todo';
+import firebase from 'firebase';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -43,6 +45,34 @@ function Questions(props) {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState(false);
   // could use this instead placeholder={props.todo.todo} 
+
+  const [todos, setTodos] = useState([]);
+
+  const [stress, setStress] = useState('');
+  const [time, setTime] = useState('');
+  const [energy, setEnergy] = useState('');
+  const [home, setHome] = useState ('');
+
+  const ref = firebase.firestore().collection('todos');
+
+  useEffect(() => {
+    db.collection('todos').orderBy("timestamp", "desc").onSnapshot(snapshot => {
+      setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, key: doc.id })))
+    })
+  }, []);
+
+  const addTodo = (event) => {
+    event.preventDefault();
+
+    db.collection('todos').add({
+      todo: input,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      // stressful: 
+    })
+
+    setTodos([...todos, input]);
+    setInput('');
+  }
 
   // const handleOpen = () => {
   //   setOpen(true);
@@ -69,6 +99,10 @@ function Questions(props) {
 
     setOpen(false);
   }
+
+    const handleFilter = () => {
+
+  };
 
   return (
     <>
@@ -98,7 +132,7 @@ function Questions(props) {
               <FormControlLabel control={<Checkbox />} label="Shoor" id="leaveHouse" />
               <FormControlLabel control={<Checkbox />} label="No, please" id="stayIn" />
             </FormGroup>
-            <Button>Buttle Me Up Some Things To Do</Button>
+            <Button onClick={handleFilter}>Buttle Me Up Some Things To Do</Button>
           </div>
           {/* <FormControl>
             <Input value ={input} onChange={event => setInput(event.target.value)} />
