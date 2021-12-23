@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {List, ListItem, ListItemText, Button, Modal, FormControl, Input, InputLabel} from '@material-ui/core';
 import db from './../firebase';
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOutlineOutlined';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -65,7 +65,7 @@ function Todo(props) {
         </ListItemAvatar> */}
         <ListItemText primary={props.todo.todo} secondary="⏱️ Dummy Deadline" />
       <Button onClick={e => setOpen(true)}>Edit</Button>
-      <DeleteForeverIcon onClick={event => db.collection('todos').doc(props.todo.id).delete()} />
+      <RemoveCircleOutlineOutlinedIcon onClick={event => db.collection('todos').doc(props.todo.id).delete()} />
       </ListItem>
     </List>
     </>

@@ -33,6 +33,9 @@ function EnergySlider() {
   return (
     <Box sx={{ width: '90%' }}>
       <Slider
+        sx={{
+          color: 'secondary.light'
+        }}
         aria-label="Minutes"
         defaultValue={60}
         getAriaValueText={valuetext}

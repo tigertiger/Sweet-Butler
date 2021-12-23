@@ -45,6 +45,9 @@ function TimeSlider() {
   return (
     <Box sx={{ width: '90%' }}>
       <Slider
+        sx={{
+          color:'secondary.light'
+        }}
         aria-label="Minutes"
         defaultValue={10}
         getAriaValueText={valuetext}

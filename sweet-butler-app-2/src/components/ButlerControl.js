@@ -1,11 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import './../App.css'
-// import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, InputLabel, Input } from '@material-ui/core';
-// import Todo from './../components/Todo';
-// import db from './../firebase';
-// import firebase from 'firebase/compat/app';
-import Query from './../components/Query';
-// import "firebase/firestore";
 import React, { useState, useEffect } from 'react';
 import {Button, Checkbox, FormControl, FormControlLabel, InputLabel, Input, FormGroup} from '@material-ui/core';
 import Todo from './../components/Todo';
@@ -37,7 +29,6 @@ function ButlerControl() {
       energy: energy,
       location: location,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      // stressful: 
     })
 
     setTodos([...todos, object, stress, time, energy, location]);

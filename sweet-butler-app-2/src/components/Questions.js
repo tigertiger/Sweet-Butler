@@ -21,12 +21,10 @@
 import React, { useState, useEffect } from 'react';
 import { List, ListItem, ListItemText, Button, Modal, FormControl, Input, InputLabel, FormGroup, FormControlLabel, Checkbox, Slider, Box } from '@material-ui/core';
 import db from './../firebase';
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { makeStyles } from '@material-ui/core/styles';
 import TimeSlider from './TimeSlider';
 import EnergySlider from './EnergySlider';
-import Todo from './../components/Todo';
-import firebase from 'firebase';
+import {useHistory} from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -35,16 +33,24 @@ const useStyles = makeStyles((theme) => ({
     borderRadius:'2%',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    margin: '8% auto 0',
+    margin: '2% auto 0',
   },
 }));
 
-function Questions(props) {
 
+function Questions(props) {
+  
+  const history = useHistory();
+  
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState(false);
   // could use this instead placeholder={props.todo.todo} 
+
+  const handleButtle = () => {
+    setOpen(false);
+    history.push("/cupboard");
+  }
 
   // const handleOpen = () => {
   //   setOpen(true);
@@ -92,7 +98,9 @@ function Questions(props) {
               <FormControlLabel control={<Checkbox />} label="Shoor" id="leaveHouse" />
               <FormControlLabel control={<Checkbox />} label="No, please" id="stayIn" />
             </FormGroup>
-            <Button>Buttle Me Up Some Things To Do</Button>
+            <div className="qButton">
+            <Button onClick={handleButtle} variant="outlined" style={{border: '1px solid rgb(70, 60, 104)', color: 'rgb(70, 60, 104)'}} >Buttle Me Up Some Things To Do</Button>
+            </div>
           </div>
           {/* <FormControl>
             <Input value ={input} onChange={event => setInput(event.target.value)} />
