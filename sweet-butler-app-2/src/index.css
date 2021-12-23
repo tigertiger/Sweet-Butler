@@ -43,7 +43,7 @@ h1 {
   line-height:3rem;
   margin-right:3%;
   margin-left:-9%;
-  margin-top:-70px;
+  /* margin-top:-70px; */
 }
 
 .navIcon {
@@ -63,4 +63,13 @@ h1 {
 
 .qButton {
   margin:2% 30%;
+}
+
+#cabinetGrid {
+  width:50%;
+  margin:auto;
+}
+
+#accrobion:expanded {
+  margin:2% auto;
 }

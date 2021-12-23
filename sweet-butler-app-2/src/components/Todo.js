@@ -63,7 +63,7 @@ function Todo(props) {
           <Avatar>
           </Avatar>
         </ListItemAvatar> */}
-        <ListItemText primary={props.todo.todo} secondary="⏱️ Dummy Deadline" />
+        <ListItemText primary={props.todo.todo} secondary="🍃 Details" />
       <Button onClick={e => setOpen(true)}>Edit</Button>
       <RemoveCircleOutlineOutlinedIcon onClick={event => db.collection('todos').doc(props.todo.id).delete()} />
       </ListItem>

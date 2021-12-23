@@ -1,10 +1,14 @@
-import React from 'react'
-import ButlerControl from '../components/ButlerControl'
+import React from 'react';
+import ButlerControl from '../components/ButlerControl';
+import Lists from '../components/Lists';
+import HelperHolder from '../components/HelperHolder';
 
 function Cupboard() {
   return (
     <div>
-      <ButlerControl />
+      {/* <ButlerControl /> */}
+      <Lists />
+      <HelperHolder />
     </div>
   )
 }
