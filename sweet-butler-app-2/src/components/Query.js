@@ -42,11 +42,17 @@ function Query() {
 
   const [todos, setTodos] = useState([]);
   const locFilter = "home";
+  const stressFilter = "noStress";
+  const timeFilter = 10;
+  const energyFilter = 10;
 
   useEffect(() => {
     db.collection('todos')
-      .orderBy("timestamp", "desc")
+      .orderBy("time", "timestamp", "desc")
       .where("location", "==", locFilter)
+      .where("stress", "==", stressFilter)
+      .where("time", "<=", timeFilter)
+      // .where("energy", "<=", energyFilter)
       .onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, key: doc.id })))
     })

@@ -36,3 +36,27 @@ h1 {
   line-height: 0;
   padding-bottom:4%;
 }
+
+.navBar {
+  float:right;
+  text-align:left;
+  line-height:3rem;
+  margin-right:3%;
+  margin-left:-9%;
+  margin-top:-70px;
+}
+
+.navIcon {
+  padding: 0 5px 0 0;
+  margin-bottom:-5px;
+}
+
+.navLink {
+  text-decoration:none;
+  font-size:0.9rem;
+}
+
+.navLink:hover {
+  font-weight:bold;
+  color:#fff;
+}

@@ -31,8 +31,8 @@ import firebase from 'firebase';
 const useStyles = makeStyles((theme) => ({
   paper: {
     width: '80%',
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    backgroundColor: '#e5ddf9',
+    borderRadius:'2%',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     margin: '8% auto 0',

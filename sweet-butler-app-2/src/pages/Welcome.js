@@ -1,6 +1,5 @@
 import React from 'react';
 import Greeting from './../components/Greeting';
-import Questions from '../components/Questions';
 
 function Welcome() {
   return (
