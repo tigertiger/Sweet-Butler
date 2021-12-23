@@ -12,6 +12,7 @@ import Nav from './components/Nav';
 import Welcome from './pages/Welcome';
 import Cupboard from './pages/Cupboard';
 import Brand from './components/Brand';
+import ForPresentation from './components/ForPresentation';
 
 function App() {
 
@@ -25,12 +26,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Brand />
-        <Nav />
+        {/* <Brand />
+        <Nav /> */}
         <Switch>
           <Route
             exact path='/cupboard'>
             <Cupboard />
+          </Route>
+
+          <Route
+            exact path='/presentation'>
+            <ForPresentation />
           </Route>
 
           <Route
