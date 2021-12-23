@@ -11,6 +11,7 @@ import Form from './components/Form';
 import Nav from './components/Nav';
 import Welcome from './pages/Welcome';
 import Cupboard from './pages/Cupboard';
+import Brand from './components/Brand';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Brand />
         <Nav />
         <Switch>
           <Route

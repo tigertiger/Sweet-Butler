@@ -104,8 +104,9 @@ For tomorrow...I need to do everything. But, I guess, priorities?
 [Afternoon]
 [1:30 - 2:00pm]: Reoriented myself & started prepping Questions.js for query/filtering
 [2:00pm - 3:13pm]: Added more form fields [energy level & time] & confirmed they're workig with Firestore
-[3:13 - ]: Played around with querying & watched this vidyus on filtering/querying firebase/firestore: https://youtu.be/T-GfSkC1JpE - It was not super helpful. Need to figure out how to filter with a form.  
-Ooh, maybe got it. Just need to figure out how to pass filters from my form into my query bucket.
+[3:13 - ??]: Played around with querying & watched this vidyus on filtering/querying firebase/firestore: https://youtu.be/T-GfSkC1JpE - It was not super helpful. Need to figure out how to filter with a form.  
+Ooh, maybe got it. Just need to figure out how to pass filters from my form into my query bucket.  
+[?? - 7:02pm-ish]: See git commits
 
 <hr>
 <h3 style="padding:1em 0 1em 0">Things to Come Back To</h3>
