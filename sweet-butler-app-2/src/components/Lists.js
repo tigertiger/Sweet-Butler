@@ -22,7 +22,7 @@ function Lists() {
 
   return (
     <>
-      <h1>Ugh. 😠</h1>
+      <h1 className="mainTitle">Sweet Butler</h1>
       <Grid container justify="flex-middle" id="cabinetGrid">
         <div className="listHolder">
           <ul>

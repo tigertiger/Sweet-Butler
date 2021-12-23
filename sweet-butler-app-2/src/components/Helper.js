@@ -56,10 +56,10 @@ function Helper() {
           <Input value={object} onChange={event => setObject(event.target.value)} /><br />
 <FormGroup>
           <div>Is this Stressful?</div>
-          <FormControlLabel control={<Checkbox value={'stress'} onChange={onStressChange} checked={isStress} />} label="Yes" />
+          <FormControlLabel control={<Checkbox size="small" value={'stress'} onChange={onStressChange} checked={isStress} />} label="Yes" />
           </FormGroup>
           <FormGroup>
-          <FormControlLabel control={<Checkbox value={'noStress'} onChange={onStressChange} checked={!isStress} />} label="Nope" /><br />
+          <FormControlLabel control={<Checkbox size="small" value={'noStress'} onChange={onStressChange} checked={!isStress} />} label="Nope" /><br />
           </FormGroup>
 
           <div>How Much Time Does This Take?</div>

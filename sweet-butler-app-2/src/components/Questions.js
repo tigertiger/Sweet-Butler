@@ -82,8 +82,8 @@ function Questions(props) {
           <div>
             <FormGroup>
             <h3>Should we keep it stress free?</h3>
-              <FormControlLabel control={<Checkbox />} label="Yes, please" id="stressFree" />
-              <FormControlLabel control={<Checkbox />} label="Nah, show me everything" id="everything" />
+              <FormControlLabel control={<Checkbox size="small" />} label="Yes, please" id="stressFree" />
+              <FormControlLabel control={<Checkbox size="small" />} label="Nah, show me everything" id="everything" />
             </FormGroup>
             <FormGroup>
               <h3>How much time do you have?</h3>
