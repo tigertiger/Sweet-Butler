@@ -50,10 +50,10 @@ const Greeting = ({ text, text2 }) => {
 
 Greeting.defaultProps = {
   text: 'Hello.'
+
 }
 
 Greeting.propTypes = {
-  text: PropTypes.string,
   text: PropTypes.string
 }
 

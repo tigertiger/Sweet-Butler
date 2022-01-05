@@ -26,8 +26,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Brand />
-        <Nav /> */}
+        <Brand />
+        <Nav />
         <Switch>
           <Route
             exact path='/cupboard'>

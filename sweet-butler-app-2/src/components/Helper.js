@@ -8,7 +8,7 @@ function Helper() {
 
   const [todos, setTodos] = useState([]);
   const [object, setObject] = useState('');
-  const [stress, setStress] = useState('');
+  const [stress, setStress] = useState(false);
   const [time, setTime] = useState('');
   const [energy, setEnergy] = useState('');
   const [location, setLocation] = useState ('');
